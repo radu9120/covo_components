@@ -13,17 +13,17 @@ import {
   updateDoc,
   WhereFilterOp,
 } from "firebase/firestore";
-import { firebaseConfig } from "./firebaseConfig";
+// import { firebaseConfig } from "./firebaseConfig";
 
 // // Web app's Firebase configuration
-// const firebaseConfig = {
-//   apiKey: process.env.API_KEY,
-//   authDomain: process.env.AUTH_DOMAIN,
-//   projectId: process.env.PROJECT_ID,
-//   storageBucket: process.env.STORAGE_BUCKET,
-//   messagingSenderId: process.env.MG_SENDER_ID,
-//   appId: process.env.APP_ID,
-// };
+const firebaseConfig = {
+  apiKey: process.env.API_KEY,
+  authDomain: process.env.AUTH_DOMAIN,
+  projectId: process.env.PROJECT_ID,
+  storageBucket: process.env.STORAGE_BUCKET,
+  messagingSenderId: process.env.MG_SENDER_ID,
+  appId: process.env.APP_ID,
+};
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
