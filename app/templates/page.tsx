@@ -9,7 +9,7 @@ const { title, desc } = {
 };
 
 export const metadata = {
-  metadataBase: new URL("https://floatui.com"),
+  metadataBase: new URL("https://www.covo-components.co.uk/"),
   title,
   description: desc,
   openGraph: {

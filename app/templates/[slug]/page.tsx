@@ -74,8 +74,7 @@ export default async ({ params: { slug } }: { params: Params }) => {
       templateFile,
     };
   })[0];
-
-  return (
+  gs: return (
     <>
       <section className="mt-24">
         <div className="max-w-screen max-w-2xl mx-auto lg:max-w-none">
@@ -113,7 +112,7 @@ export default async ({ params: { slug } }: { params: Params }) => {
                   </LinkItem>
                   <LinkItem
                     target="_blank"
-                    href={`https://drive.google.com/u/0/uc?id=${template?.templateFile}`}
+                    href={`${template?.templateFile}`}
                     variant="shiny"
                     className="inline-block w-full hover:bg-zinc-700 sm:w-auto"
                   >
