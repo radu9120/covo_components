@@ -35,7 +35,7 @@ export default function FUISecondaryNavbar() {
         <div className="flex items-center justify-between py-3 lg:py-4 lg:block">
           <a href="javascript:void(0)">
             <img
-              src="/logo.svg"
+              src="/cove2.svg"
               width={120}
               height={50}
               alt="Covo Components logo"

@@ -28,7 +28,7 @@ export default function FUIHeroSectionWithImage() {
     <div className="flex items-center justify-between py-5 md:block">
       <a href="javascript:void(0)">
         <img
-          src="https://www.floatui.com/logo.svg"
+          src="/cove2.svg"
           width={120}
           height={50}
           alt="Covo Components logo"

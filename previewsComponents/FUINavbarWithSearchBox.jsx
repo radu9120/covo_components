@@ -78,7 +78,7 @@ export default function FUINavbarWithSearchBox() {
         <div className="flex-none lg:flex-initial">
           <a href="javascript:void(0)">
             <img
-              src="/logo.svg"
+              src="/cove2.svg"
               width={120}
               height={50}
               alt="Covo Components logo"
