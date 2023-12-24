@@ -63,8 +63,8 @@ export default () => {
   };
 
   return (
-    <div className="flex-none fixed inset-x-0 z-40 top-16 w-full xl:relative xl:max-w-[16rem] xl:top-0 xl:inset-x-[unset]">
-      <div className="py-2.5 px-4 bg-zinc-950 border-y border-zinc-800 xl:px-8 xl:hidden">
+    <div className="flex-none relative  inset-x-0 z-40 top-10 w-full xl:relative xl:max-w-[16rem] xl:top-0 xl:inset-x-[unset]">
+      <div className="py-2.5 z-50 px-4 bg-zinc-950 border-y border-zinc-800 xl:px-8 xl:hidden mt-5">
         <button
           className="flex gap-x-2 items-center text-gray-300"
           onClick={() => setOpen(!isOpen)}
@@ -86,7 +86,6 @@ export default () => {
               <MagnifyingGlassIcon className="w-5 h-5 absolute left-3 inset-y-0 my-auto text-zinc-500" />
               <Input
                 required
-                placeholder="Search..."
                 className="w-full pl-12 border-zinc-700"
                 onChange={handleSearch}
               />

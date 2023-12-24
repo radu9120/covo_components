@@ -32,7 +32,14 @@ export default () => (
             width={250}
             height={250}
             alt={""}
-            className="absolute -top-20"
+            className="absolute -top-20 hidden lg:block"
+          ></Image>
+          <Image
+            src="/logo-dark.svg"
+            width={250}
+            height={250}
+            alt={""}
+            className="absolute -top-52 lg:hidden"
           ></Image>
           <p className="text-sm text-zinc-300 mt-32">
             Covo Components is a free library of UI components for Tailwind CSS

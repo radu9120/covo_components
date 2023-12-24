@@ -7,6 +7,7 @@ import Brand from "../Brand";
 import Link from "next/link";
 import NewsletterModal from "../NewsletterModal";
 import { SparklesIcon } from "@heroicons/react/24/outline";
+import Image from "next/image";
 
 export default () => {
   const [state, setState] = useState(false);
@@ -34,7 +35,7 @@ export default () => {
   function EditorWithAiButton() {
     return (
       <button
-        className="w-full font-medium text-sm text-zinc-400 hover:text-zinc-200 flex items-center gap-2 duration-200 group"
+        className="w-full hidden md:flex font-medium text-sm text-zinc-400 hover:text-zinc-200  items-center gap-2 duration-200 group"
         onClick={() => setNewsletterModalActive(true)}
       >
         AI Editor
@@ -45,7 +46,7 @@ export default () => {
 
   return (
     <>
-      <header className="h-[4rem] relative z-20">
+      <header className="h-[5rem] relative z-20">
         <nav
           className={` ${
             state
@@ -56,7 +57,22 @@ export default () => {
           <div className="custom-screen-lg gap-x-14 items-center md:flex">
             <div className="flex items-center justify-between py-1 md:block ">
               <Link href="/">
-                <Brand />
+                <Image
+                  width={150}
+                  height={150}
+                  src="/logo-dark.svg"
+                  alt={""}
+                  className="-mt-8 hidden md:block"
+                ></Image>
+              </Link>
+              <Link href="/">
+                <Image
+                  width={120}
+                  height={120}
+                  src="/logo-dark.svg"
+                  alt={""}
+                  className=" md:hidden  relative right-20 -top-2 z-0"
+                ></Image>
               </Link>
               <div className="flex md:hidden">
                 <div className="mr-3">
@@ -68,19 +84,19 @@ export default () => {
                   onClick={() => setState(!state)}
                 >
                   {state ? (
-                    <XMarkIcon className="w-5 h-5 pointer-events-none text-zinc-500 group-hover:text-zinc-400" />
+                    <XMarkIcon className="w-8 h-8 pointer-events-none text-zinc-500 group-hover:text-zinc-400" />
                   ) : (
-                    <Bars3Icon className="w-5 h-5 pointer-events-none text-zinc-500 group-hover:text-zinc-400" />
+                    <Bars3Icon className="w-8 h-8 pointer-events-none text-zinc-500 group-hover:text-zinc-400" />
                   )}
                 </button>
               </div>
             </div>
             <div
-              className={`flex-1 items-center mt-8 md:mt-4 md:flex ${
+              className={`flex-1 items-center -mt-10  md:flex ${
                 state ? "block" : "hidden"
               } `}
             >
-              <ul className="flex-1 justify-center items-center space-y-6 md:flex md:space-x-6 md:space-y-0">
+              <ul className="flex-1 justify-center   mt-10 lg:mt-0 items-center space-y-6 md:flex md:space-x-6 md:space-y-0">
                 {navigation.map((item, idx) => {
                   return (
                     <li
