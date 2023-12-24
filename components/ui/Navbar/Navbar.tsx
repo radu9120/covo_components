@@ -20,7 +20,7 @@ export default () => {
     { title: "Demo", path: "/demo" },
     {
       title: "Github",
-      path: "https://github.com/MarsX-dev/floatui",
+      path: "https://github.com/radu9120/covo_components",
       props: { target: "_blank" },
     },
   ];
