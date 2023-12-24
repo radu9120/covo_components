@@ -38,7 +38,7 @@ async function generateSiteMap() {
    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
      <!--We manually set the two URLs we know already-->
      <url>
-       <loc>${BASE_URL}</loc>
+       <loc>${BASE_URL}</loc>  
      </url>
      <url>
        <loc>${BASE_URL}/components</loc>

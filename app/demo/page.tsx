@@ -6,7 +6,7 @@ import PreviewApp from "components/ui/Preview/PreviewApp";
 import HeroBgGradient from "components/HeroBgGradient";
 import { serialize } from "next-mdx-remote/serialize";
 
-const title = "Float UI - Float UI components demo";
+const title = "Covo Components - Covo Components components demo";
 
 export const metadata = {
   metadataBase: new URL("https://floatui.com"),

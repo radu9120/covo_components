@@ -8,7 +8,7 @@ export default () => (
       </h2>
       <p className="text-zinc-400 max-w-xl mx-auto">
         Copy and paste our ready to use components into your apps, and save
-        time, or use it in MarsX.
+        time.
       </p>
       <div className="flex flex-wrap items-center justify-center gap-3">
         <LinkItem
@@ -17,13 +17,6 @@ export default () => (
           className="inline-block w-full hover:bg-zinc-700 sm:w-auto"
         >
           Get started
-        </LinkItem>
-        <LinkItem
-          href="https://marsx.dev/?ref=floatui"
-          target="_blank"
-          className="inline-block w-full sm:w-auto"
-        >
-          Use in MarsX
         </LinkItem>
       </div>
     </div>

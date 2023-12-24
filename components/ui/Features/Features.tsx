@@ -18,7 +18,7 @@ export default () => {
   const features: Feature[] = [
     {
       title: "Beautifully designed",
-      desc: "Float UI allows you build beautiful and modern websites regardless of your design skills.",
+      desc: "Covo Components allows you to build beautiful and modern websites regardless of your design skills.",
       icon: <IconPennibLine />,
     },
     {
@@ -36,10 +36,12 @@ export default () => {
   return (
     <section className="custom-screen mt-32">
       <div className="max-w-xl mx-auto space-y-4 text-center">
-        <h2 className="text-4xl heading">Turn your ideas into reality</h2>
+        <h2 className="text-4xl heading">
+          Materialise your ideas into reality.
+        </h2>
         <p className="text-zinc-400">
-          Float UI offers all the vital building blocks you need to transform
-          your idea into a great-looking startup.
+          Covo Components provides all the essential elements required to turn
+          your idea into a visually appealing startup.
         </p>
       </div>
       <ul className="space-y-6 gap-6 mt-8 max-w-7xl mx-auto grid-cols-2 sm:grid lg:grid-cols-3 sm:space-y-0">

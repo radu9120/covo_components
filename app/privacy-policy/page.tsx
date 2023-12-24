@@ -1,4 +1,4 @@
-const title = "Float UI - Privacy Policy";
+const title = "Covo Components - Privacy Policy";
 
 export const metadata = {
   metadataBase: new URL("https://floatui.com"),

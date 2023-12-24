@@ -32,16 +32,16 @@ export async function generateMetadata({
     alternates: {
       canonical: `/templates/${slug}`,
     },
-    title: `Float UI - ${template.template_name} Tailwind CSS Template`,
+    title: `Covo Components - ${template.template_name} Tailwind CSS Template`,
     description: template.description,
     openGraph: {
       images: template.banner_url,
-      title: `Float UI - ${template.template_name} Tailwind CSS Template`,
+      title: `Covo Components - ${template.template_name} Tailwind CSS Template`,
       description: template.description,
     },
     twitter: {
       images: [template.banner_url],
-      title: `Float UI - ${template.template_name} Tailwind CSS Template`,
+      title: `Covo Components - ${template.template_name} Tailwind CSS Template`,
       description: template.description,
     },
   };

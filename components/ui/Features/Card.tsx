@@ -48,7 +48,7 @@ export default ({
         <div>
           <Image
             src={featureCover}
-            alt="Float UI"
+            alt="Covo Components"
             className="absolute inset-0 -z-10"
           />
         </div>

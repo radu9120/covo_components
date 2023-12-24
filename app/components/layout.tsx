@@ -1,7 +1,7 @@
 import Sidebar from "components/ui/Sidebar";
 import { ReactNode } from "react";
 
-const title = "Modern UI Components | Float UI";
+const title = "Modern UI Components | Covo Components";
 
 export const metadata = {
   metadataBase: new URL("https://floatui.com"),
