@@ -9,11 +9,11 @@ import { serialize } from "next-mdx-remote/serialize";
 const title = "Covo Components - Covo Components components demo";
 
 export const metadata = {
-  metadataBase: new URL("https://floatui.com"),
+  metadataBase: new URL("https://www.covo-components.co.uk"),
   title,
   openGraph: {
     title,
-    url: "https://floatui.com",
+    url: "https://www.covo-components.co.uk",
   },
   twitter: {
     title,

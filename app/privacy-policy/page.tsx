@@ -1,11 +1,11 @@
 const title = "Covo Components - Privacy Policy";
 
 export const metadata = {
-  metadataBase: new URL("https://floatui.com"),
+  metadataBase: new URL("https://www.covo-components.co.uk"),
   title,
   openGraph: {
     title,
-    url: "https://floatui.com",
+    url: "https://www.covo-components.co.uk",
   },
   twitter: {
     title,

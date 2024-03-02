@@ -1,6 +1,6 @@
 import sections from "sections/sections.json";
 import { fetchDocs } from "../../firebase/config";
-const BASE_URL = "https://floatui.com";
+const BASE_URL = "https://www.covo-components.co.uk";
 
 type SitemapItem = { slug: string; lastmod: string };
 

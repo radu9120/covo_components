@@ -17,7 +17,7 @@ export async function generateMetadata({
   const { headline, metaDescription } = post;
 
   return {
-    metadataBase: new URL("https://floatui.com"),
+    metadataBase: new URL("https://www.covo-components.co.uk"),
     title: `${headline} - Covo Components Blog`,
     description: metaDescription,
     alternates: {

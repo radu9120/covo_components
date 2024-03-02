@@ -17,7 +17,7 @@ export const metadata = {
   openGraph: {
     title,
     description,
-    url: "https://floatui.com",
+    url: "https://www.covo-components.co.uk",
   },
   twitter: {
     card: "summary_large_image",

@@ -10,14 +10,14 @@ import metatag from "metatag";
 const { title, desc, ogImage } = metatag;
 
 export const metadata = {
-  metadataBase: new URL("https://floatui.com"),
+  metadataBase: new URL("https://www.covo-components.co.uk"),
   title,
   description: desc,
   openGraph: {
     title,
     description: desc,
     images: ogImage,
-    url: "https://floatui.com",
+    url: "https://www.covo-components.co.uk",
   },
   twitter: {
     title,
@@ -32,8 +32,6 @@ const GA_ID = process.env.GA_ID;
 const GOOGLE_SITE_VERIFICATION = process.env.GOOGLE_SITE_VERIFICATION;
 
 export default function RootLayout({
-  // Layouts must accept a children prop.
-  // This will be populated with nested layouts or pages
   children,
 }: {
   children: React.ReactNode;
@@ -46,8 +44,9 @@ export default function RootLayout({
           content="width=device-width, initial-scale=1.0, maximum-scale=3"
         />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@float_ui" />
-        <meta name="twitter:creator" content="@float_ui" />
+        <meta name="twitter:site" content="@covo_components" />
+        <meta name="twitter:creator" content="@covo_components" />
+
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="google-site-verification"

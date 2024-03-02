@@ -81,7 +81,7 @@ export default () => {
             isOpen ? "" : "hidden"
           }`}
         >
-          <div className="pr-4 pt-10 pb-2">
+          <div className="pr-4 pt-4 pb-2">
             <div className="relative">
               <MagnifyingGlassIcon className="w-5 h-5 absolute left-3 inset-y-0 my-auto text-zinc-500" />
               <Input

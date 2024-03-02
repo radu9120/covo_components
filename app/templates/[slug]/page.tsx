@@ -28,7 +28,7 @@ export async function generateMetadata({
   })[0];
 
   return {
-    metadataBase: new URL("https://floatui.com"),
+    metadataBase: new URL("https://www.covo-components.co.uk"),
     alternates: {
       canonical: `/templates/${slug}`,
     },
