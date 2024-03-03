@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  @apply bg-slate-950;
+}
+
 .max-w-screen {
   @apply max-w-screen-xl mx-auto px-4;
 }

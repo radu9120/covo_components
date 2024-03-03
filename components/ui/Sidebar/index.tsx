@@ -77,7 +77,7 @@ export default () => {
       </div>
       <aside className="relative w-full">
         <div
-          className={`fixed inset-x-0 w-full h-full bg-zinc-950 px-4 border-r border-zinc-800 xl:inset-x-[unset] xl:block xl:max-w-[16rem] xl:top-auto xl:px-0 ${
+          className={`fixed inset-x-0 w-full h-full bg-slate-950 px-4 border-r border-zinc-800 xl:inset-x-[unset] xl:block xl:max-w-[16rem] xl:top-auto xl:px-0 ${
             isOpen ? "" : "hidden"
           }`}
         >

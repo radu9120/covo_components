@@ -7,6 +7,7 @@ import { ReactNode } from "react";
 import featureCover from "public/feature-cover.svg";
 import Image from "next/image";
 import Card from "./Card";
+import HeroBgGradientClient from "../Hero/HeroBgGradient.Client";
 
 type Feature = {
   title: string;
@@ -44,6 +45,7 @@ export default () => {
           your idea into a visually appealing startup.
         </p>
       </div>
+      <HeroBgGradientClient />
       <ul className="space-y-6 gap-6 mt-8 max-w-7xl mx-auto grid-cols-2 sm:grid lg:grid-cols-3 sm:space-y-0">
         {features.map((item: Feature, key: number) => (
           <Card icon={item.icon} title={item.title} desc={item.desc} />

@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 import "./tailwind.css";
-import "./customize.css";
+import "./global.css";
 import "./prismjs-theme.css";
 import Navbar from "components/ui/Navbar";
 import Footer from "components/ui/Footer";

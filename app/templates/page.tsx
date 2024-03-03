@@ -2,6 +2,7 @@ import HeroBgGradient from "components/HeroBgGradient";
 import TemplateCard from "components/ui/TemplateCard";
 import { fetchDocs } from "../../firebase/config";
 import { Templates } from "types/types";
+import Link from "next/link";
 
 const { title, desc } = {
   title: "Covo Components - Beautiful Tailwind Components",
@@ -60,9 +61,10 @@ export default async () => {
               templates, built with React, Next.js with Tailwind CSS.
             </p>
           </div>
+
           <ul
             id="templates"
-            className="mt-32 space-y-7 divide-y divide-zinc-800 gap-14 grid-cols-2 lg:grid lg:space-y-0 lg:divide-y-0"
+            className="mt-32 space-y-7 divide-y divide-zinc-800 gap-14 grid-cols-2 lg:grid lg:space-y-0 lg:divide-y-0 "
           >
             {templates.map((item, idx) => (
               <TemplateCard key={idx} item={item as Templates} />

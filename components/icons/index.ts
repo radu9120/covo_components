@@ -10,3 +10,4 @@ export * from "./IconRadix";
 export * from "./IconRadixVue";
 export * from "./IconAlpinejs";
 export * from "./IconLoading";
+export * from "./IconNextjs";

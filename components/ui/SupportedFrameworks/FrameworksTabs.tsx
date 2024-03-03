@@ -1,7 +1,13 @@
 "use client";
 
 import * as Tabs from "@radix-ui/react-tabs";
-import { IconHTML, IconReact, IconSvelte, IconVue } from "components/icons";
+import {
+  IconHTML,
+  IconReact,
+  IconSvelte,
+  IconVue,
+  IconNext,
+} from "components/icons";
 import SyntaxHeighlight from "components/SyntaxHeighlight";
 import supportedFrameworksJSON from "utils/supportedFrameworksJSON";
 import { m } from "framer-motion";
@@ -10,18 +16,23 @@ import TabsTrigger from "../Tabs/TabsTrigger";
 import LazyMotionWrapper from "components/LazyMotionWrapper";
 
 export default () => {
-  const [selectedTab, setSelectedTab] = useState("html");
+  const [selectedTab, setSelectedTab] = useState("next");
 
   const tabs = [
     {
-      name: "HTML",
-      icon: <IconHTML />,
-      value: "html",
+      name: "Next.js",
+      icon: <IconNext />,
+      value: "next",
     },
     {
       name: "React.js",
       icon: <IconReact />,
       value: "react",
+    },
+    {
+      name: "HTML",
+      icon: <IconHTML />,
+      value: "html",
     },
     {
       name: "Vue.js",

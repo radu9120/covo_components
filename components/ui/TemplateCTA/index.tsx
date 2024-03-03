@@ -1,3 +1,4 @@
+import Link from "next/link";
 import BgGradient from "./BgGradient";
 import TemplateScoresCard from "./TemplateScoresCard";
 import TemplatesOverview from "./TemplatesOverview";
@@ -13,11 +14,12 @@ export default () => (
           templates, built on top of React, Next.js with Tailwind CSS.
         </p>
       </div>
-
-      <div className="gap-x-6 mt-10 space-y-6 md:flex md:space-y-0">
-        <TemplatesOverview />
-        <TemplateScoresCard />
-      </div>
+      <Link href="/templates">
+        <div className="gap-x-6 mt-10 space-y-6 md:flex md:space-y-0">
+          <TemplatesOverview />
+          <TemplateScoresCard />
+        </div>
+      </Link>
     </div>
   </section>
 );
