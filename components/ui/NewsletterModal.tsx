@@ -70,7 +70,6 @@ export default ({
             <Input
               required
               autoFocus
-              placeholder="Enter your email"
               onChange={(e) =>
                 setPersonalEMail((e.target as HTMLInputElement).value)
               }
