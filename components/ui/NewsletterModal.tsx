@@ -70,6 +70,8 @@ export default ({
             <Input
               required
               autoFocus
+              type="email"
+              aria-label="Email address"
               onChange={(e) =>
                 setPersonalEMail((e.target as HTMLInputElement).value)
               }

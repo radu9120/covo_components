@@ -13,9 +13,10 @@ interface Props {
   children: React.ReactNode;
   dir?: string;
   srcDoc?: string;
+  title?: string;
 }
 
-const Viewport = ({ children, dir, srcDoc = template, ...props }: Props) => {
+const Viewport = ({ children, dir, srcDoc = template, title = "Component preview", ...props }: Props) => {
   const [loaded, setLoaded] = useState<boolean>(false);
   const [compContent, setCompContent] = useState<any>(null);
   const [pressure, setPressure] = useState<boolean>(false);
@@ -128,6 +129,7 @@ const Viewport = ({ children, dir, srcDoc = template, ...props }: Props) => {
           ref={iframe}
           className="w-full bg-white appearance-none mr-4 min-h-[300px] iframes"
           id="iframe"
+          title={title}
           loading="lazy"
         >
           {compContent}

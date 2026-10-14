@@ -85,7 +85,7 @@ export default ({
         </div>
       </div>
       {isPreview ? (
-        <Viewport>
+        <Viewport title={item?.title ? `${item.title} preview` : undefined}>
           <MDXRemoteClient mdxSource={mdxSource} components={componentsNames} />
         </Viewport>
       ) : (

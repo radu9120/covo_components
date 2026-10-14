@@ -23,14 +23,14 @@ export default ({
           <h3 className="inline-block text-lg text-zinc-100 font-semibold hover:underline sm:text-xl">
             {title}
           </h3>
-          <p className="text-zinc-500 mt-2 leading-relaxed line-clamp-2">
+          <p className="text-zinc-400 mt-2 leading-relaxed line-clamp-2">
             {desc}
           </p>
         </div>
-        <button className="mt-2 outline-none flex items-center text-[14px] text-indigo-400 decoration-indigo-600 hover:underline">
+        <span className="mt-2 min-h-[24px] flex items-center text-[14px] text-indigo-400 decoration-indigo-600 hover:underline">
           READ MORE
           <ArrowLongRightIcon className="w-4 h-4 ml-2" />
-        </button>
+        </span>
       </Link>
     </li>
   );

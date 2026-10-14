@@ -86,6 +86,7 @@ export default () => {
               <MagnifyingGlassIcon className="w-5 h-5 absolute left-3 inset-y-0 my-auto text-zinc-500" />
               <Input
                 required
+                aria-label="Search components"
                 className="w-full pl-12 border-zinc-700"
                 onChange={handleSearch}
               />

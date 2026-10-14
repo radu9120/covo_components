@@ -10,6 +10,8 @@ export default () => {
     { name: "Demo", href: "/demo" },
     { name: "License", href: "/license" },
     { name: "Privacy Policy", href: "/privacy-policy" },
+    { name: "Cookie Policy", href: "/cookie-policy" },
+    { name: "Accessibility", href: "/accessibility" },
     { name: "Blog", href: "/blog" },
   ];
 
@@ -22,7 +24,7 @@ export default () => {
           src="/logo-dark.svg"
           width={350}
           height={350}
-          alt={""}
+          alt="Covo Components"
           className="w-36 sm:mx-auto"
         ></Image>
 
@@ -34,8 +36,8 @@ export default () => {
       </div>
       <ul className="items-center justify-center mt-8 space-y-5 sm:flex sm:space-x-4 sm:space-y-0">
         {footerNavs.map((item, idx) => (
-          <li className=" hover:text-gray-800">
-            <a key={idx} href={item.href}>
+          <li key={idx} className=" hover:text-gray-800">
+            <a href={item.href}>
               {item.name}
             </a>
           </li>
@@ -50,7 +52,7 @@ export default () => {
           <ul className="flex items-center space-x-4">
             <li className="w-10 h-10 border rounded-full flex items-center justify-center hover:translate-x-0">
               <a
-                aria-label="Facebook account"
+                aria-label="Covo Components on GitHub"
                 target="_blank"
                 href="https://github.com/radu9120/covo_components"
               >
@@ -59,7 +61,7 @@ export default () => {
             </li>
 
             <li className="w-10 h-10 border rounded-full flex items-center justify-center">
-              <a href="javascript:void()">
+              <a href="javascript:void()" aria-label="Facebook (link coming soon)">
                 <svg
                   className="svg-icon w-6 h-6 text-zinc-400"
                   viewBox="0 0 20 20"
@@ -73,7 +75,7 @@ export default () => {
             </li>
 
             <li className="w-10 h-10 border rounded-full flex items-center justify-center">
-              <a href="javascript:void()">
+              <a href="javascript:void()" aria-label="Dribbble (link coming soon)">
                 <svg
                   className="svg-icon w-6 h-6 text-zinc-400"
                   viewBox="0 0 20 20"
@@ -87,7 +89,7 @@ export default () => {
             </li>
 
             <li className="w-10 h-10 border rounded-full flex items-center justify-center">
-              <a href="javascript:void()">
+              <a href="javascript:void()" aria-label="Pinterest (link coming soon)">
                 <svg
                   className="svg-icon w-6 h-6 text-zinc-400"
                   viewBox="0 0 20 20"
