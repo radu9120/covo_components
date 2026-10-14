@@ -61,7 +61,7 @@ export default () => {
                   width={150}
                   height={150}
                   src="/logo-dark.svg"
-                  alt={""}
+                  alt="Covo Components home"
                   className="-mt-8 hidden md:block"
                 ></Image>
               </Link>
@@ -70,7 +70,7 @@ export default () => {
                   width={120}
                   height={120}
                   src="/logo-dark.svg"
-                  alt={""}
+                  alt="Covo Components home"
                   className=" md:hidden  relative right-20 -top-2 z-0"
                 ></Image>
               </Link>

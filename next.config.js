@@ -1,6 +1,37 @@
 /** @type {import('next').NextConfig} */
 
+// Enforced CSP only restricts framing, <base> and plugins, so it can't break scripts/styles.
+const CSP = "frame-ancestors 'self'; base-uri 'self'; object-src 'none'";
+// ponytail: report-only (logs to the browser console, no report endpoint); tighten and enforce once clean.
+const CSP_REPORT_ONLY = [
+  "default-src 'self'",
+  "script-src 'self' 'unsafe-inline' 'unsafe-eval'",
+  "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+  "font-src 'self' data: https://fonts.gstatic.com",
+  "img-src 'self' data: blob: https:",
+  "connect-src 'self' https://events.usermaven.com https://*.googleapis.com",
+  "frame-src 'self'",
+  "frame-ancestors 'self'",
+  "base-uri 'self'",
+  "object-src 'none'",
+].join("; ");
+
 const nextConfig = {
+  async headers() {
+    return [
+      {
+        source: "/:path*",
+        headers: [
+          { key: "Content-Security-Policy", value: CSP },
+          { key: "Content-Security-Policy-Report-Only", value: CSP_REPORT_ONLY },
+          { key: "X-Content-Type-Options", value: "nosniff" },
+          { key: "X-Frame-Options", value: "SAMEORIGIN" },
+          { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+          { key: "Strict-Transport-Security", value: "max-age=31536000; includeSubDomains" },
+        ],
+      },
+    ];
+  },
   // env: {
   //   DB_URI: process.env.DB_URI,
   //   URL: process.env.URL,

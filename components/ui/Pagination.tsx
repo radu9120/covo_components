@@ -18,9 +18,10 @@ const Pagination: React.FC<PaginationProps> = ({
     <div className="flex mt-12 items-center justify-center text-sm text-zinc-300">
       <a
         className={`flex items-center justify-center gap-x-2 bg-zinc-800 hover:bg-zinc-700 duration-200 rounded-md px-2 py-1 w-[90px] text-center ${
-          pageNumber ? "" : "pointer-events-none opacity-50"
+          pageNumber ? "" : "pointer-events-none text-zinc-400"
         }`}
         href={pageNumber ? `${slug}?page=${pageNumber}` : "#"}
+        aria-disabled={!pageNumber}
       >
         <ArrowLongLeftIcon className="w-4 h-4" />
         Prev
@@ -30,8 +31,9 @@ const Pagination: React.FC<PaginationProps> = ({
       </div>
       <a
         className={`flex items-center justify-center gap-x-2 bg-zinc-800 hover:bg-zinc-700 duration-200 rounded-md px-2 py-1 w-[90px] text-center ${
-          pageNumber >= lastPage - 1 ? "pointer-events-none opacity-30" : ""
+          pageNumber >= lastPage - 1 ? "pointer-events-none text-zinc-400" : ""
         }`}
+        aria-disabled={pageNumber >= lastPage - 1}
         href={
           pageNumber >= lastPage - 1 ? "#" : `${slug}?page=${pageNumber + 2}`
         }
